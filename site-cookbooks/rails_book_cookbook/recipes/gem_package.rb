@@ -14,8 +14,22 @@ bash "install pry" do
   EOC
 end
 
+bash "install twitter-bootstrap-rails" do
+  code <<-EOC
+    gem install --no-ri --no-rdoc twitter-bootstrap-rails
+  EOC
+end
+
+bash "install pry-rails" do
+  code <<-EOC
+    gem install --no-ri --no-rdoc pry-rails
+  EOC
+end
+
 bash "install puma" do
   code <<-EOC
     gem install --no-ri --no-rdoc puma
   EOC
 end
+
+
